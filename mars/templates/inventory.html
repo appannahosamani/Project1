@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    </head>
+    <body > <center>
+        <div class="container" >
+        <h1>Inventory </h1>
+        <table border="2" style="border-collapse:collapse ;" cellpadding="8px" align="center" >
+            <tr>
+                <th>Packet Id</th>
+                <th>Packet Type</th>
+                <th>Packet Content</th>
+                <th>Calories</th>
+                <th>Expiry Date</th>
+                <th>Quantity in litres</th>
+            </tr>
+            {% for i in invent %}
+            <tr>
+                <td>{{i.Packet_Id}}</td>
+                <td>{{i.Packet_Type}}</td>
+                <td>{{i.Packet_content}}</td>
+                <td>{{i.Calories}}</td>
+                <td>{{i.Expiry_Date}}</td>
+                <td>{{i.Quantity_in_Litres}}</td>
+            </tr>
+            {% endfor %}
+
+        </table><br><br>
+<div>
+    <button><a href="{% url 'home' %}">home</a></button>
+</div>
+</div>
+</center>
+    </body>
+</html>
