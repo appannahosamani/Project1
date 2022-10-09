@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+
+<body>
+    <button onclick="abc()"> click here </button>
+    <p id="xyz"></p>
+    <script>
+        function abc() {
+            var text;
+            var person = prompt("enter your name :", "");
+            if (person == null || person == "") {
+                text = "user cancelled";
+
+            } else {
+                text = "hi " + person + " glad to meet you";
+
+            }
+            document.getElementById("xyz").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

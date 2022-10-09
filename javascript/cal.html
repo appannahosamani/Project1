@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addNumbers() {
+            var a = (document.getElementById("value1").value);
+            var b = (document.getElementById("value2").value);
+            var c = a + b;
+            alert("sum" + c)
+        }
+
+        function subNumbers() {
+            var a = (document.getElementById("value1").value);
+            var b = (document.getElementById("value2").value);
+            var c = a - b;
+            alert("difference" + c)
+
+
+        }
+
+        function mulNumbers() {
+            var a = (document.getElementById("value1").value);
+            var b = (document.getElementById("value2").value);
+            var c = a * b;
+            alert("multiplication:" + c)
+        }
+
+        function divNumbers() {
+            var a = (document.getElementById("value1").value);
+            var b = (document.getElementById("value2").value);
+            var c = a / b;
+            alert("division:" + c)
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <div style="margin: 300px;">
+            <h4>
+                Arithmetic Operation
+            </h4>
+
+            <p>enter first number= <input type="number" id="value1"></p>
+            <p>enter second number=<input type="number" id="value2"> </p>
+
+            <input type="button" value="+" onclick="addNumbers()">
+            <input type="button" value="-" onclick="subNumbers()"><br>
+            <input type="button" value="*" onclick="mulNumbers()">
+            <input type="button" value="/" onclick="divNumbers()">
+
+
+        </div>
+    </center>
+</body>
+
+</html>
