@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>LOGIN PAGE</h1>
+    <p>please login here</p>
+    <div class="container">
+        <form action="{% url 'userapp:login' %}" method="POST">
+            {% csrf_token %}
+            <label for="username">username:</label>
+            <input type="text" name="username" placeholder="username">
+            <br><br>
+            <label for="password">password:</label>
+            <input type="password" name="password" placeholder="password">
+            <br><br>
+            <input type="submit" class="btn btn-success" name="login">
+        </form>
+        <p>if ur not having account plzzzz register <a href="{% url 'userapp:register' %}">here</a></p>
+    </div>
+</div>
+{% endblock %}
