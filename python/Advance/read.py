@@ -1,0 +1,26 @@
+f=open("file1.txt","r")
+print(f)
+l1=f.readlines()
+print(l1)
+l2=[]
+for i in l1:
+    l2.append(i.strip('\n'))
+print(l2)
+f.close()
+# if f.closed:
+#     print("colse")
+# else:
+#     print("open")
+# print(f.read(2))
+# print(f.fileno())
+# # print(f.encoding())
+# print(f.tell())
+# print(f.isatty())
+# print(f.readline())
+# print(f.readline())
+# f.seek(0)
+# print(f.readline())
+# # print(f.readlines())
+# print(f.read(2))
+# f.seek(0)
+# print(f.read(3))

@@ -1,0 +1,13 @@
+n=int(input("n= "))
+val=ord('A')
+for i in range(n):
+    for j  in range(n+1):
+        if i==j:
+           print(chr(val),end=" ")
+           val+=1
+           if val>ord('Z'):
+               val=ord('A')          
+        else:
+            print(" ",end=" ")
+           
+    print()
