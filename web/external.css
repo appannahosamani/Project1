@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(236, 211, 232);
+    font-size: large;
+}
+
+.abc {
+    text-align: center;
+}
+
+.ghg {
+    color: rgb(208, 48, 30);
+    font-size: 3cm;
+    font-stretch: narrower;
+    text-shadow: 100;
+    text-decoration: line-through;
+}
+
+#def {
+    font-style: unset;
+    font-size: xx-large;
+    text-decoration: underline;
+}

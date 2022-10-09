@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDIV {
+            margin: 100px 500px;
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            background-color: coral;
+            color: wheat;
+            animation: abc 5s infinite;
+            padding-top: 40px;
+            padding-left: 15px;
+        }
+        
+        #b {
+            margin: 10ch;
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            color: black;
+            animation: ab 5s infinite;
+        }
+        
+        ul {
+            display: flex;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        @keyframes abc {
+            50% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url(paper.webp); background-size: cover;">
+    <center>
+        <h1>Animation</h1>
+    </center>
+    <ul>
+        <center>
+
+            <li>
+                <div id="myDIV">hello</div>
+            </li>
+            <li>
+                <div id="myDIV">hi:)</div>
+            </li>
+        </center>
+    </ul>
+</body>
+
+</html>
