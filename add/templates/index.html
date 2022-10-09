@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addtition</title>
+    <style>
+        body {
+            background: black;
+        }
+        h1{
+            text-transform: capitalize;
+            text-shadow: 0px 6px 0px rgb(0 238 255);
+        }
+        .add {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add1 {
+            background: greenyellow;
+            margin: 50px;
+            padding: 50px;
+            border-radius: 35%;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(252, 249, 252, 0.973);
+            -moz-box-shadow: 10px 10px 5px 0px rgb(4, 4, 241);
+            box-shadow: 10px 10px 5px 0px rgba(248, 2, 2, 0.993);
+        }
+
+        button {
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            text-shadow: 0px 6px 0px rgb(0 238 255);
+            border-radius: 50%;
+        }
+
+        input {
+            width: 255px;
+            height: 50px;
+            color: red;
+            font-size: 20px;
+            text-shadow: 0px 6px 0px rgb(0 238 255);
+            border-radius: 50%;
+            padding: 10px 30px;
+            border-bottom: 3px solid red;
+            border-right: 3px solid deepskyblue;
+            border-left: 3px solid rgb(245, 3, 213);
+        }
+        hr{
+            border: 2px solid red;
+            border-radius: 50%;
+            border-top: 2px solid rgb(57, 5, 247);
+            border-bottom: 2px solid rgb(5, 231, 247);
+            border-left: 2px solid rgb(170, 5, 247);
+            border-right: 2px solid rgb(247, 5, 5);        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="add">
+        <div class="add1">
+            <h1>To add some two numbers</h1>
+            <br>
+            <hr>
+            <br>
+            <form action="calclulator" method="POST">
+                {% csrf_token %}
+                <input type="text" name="num1" placeholder="Enter 1st number"><br><br>
+                <input type="text" name="num2" placeholder="Enter 2st number"><br><br>
+                <button value="+" name="sub">+</button>
+                <button value="-" name="sub">-</button>
+                <button value="*" name="sub">x</button>
+                <button value="/" name="sub">/</button>
+                <button value="%" name="sub">%</button>
+                <button type="reset">&copy;</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
