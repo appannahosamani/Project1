@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Registration...!</h1>
+    <div class="container">
+        {% if registered %}
+        <h1>Thanks for Registration...</h1>
+        {% else %}
+        <h1>Registraion form</h1>
+        <h1>fill uop the form</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{userform.as_p}}
+            {{userprofileInfoform.as_p}}
+            <input type="submit" class="btn btn-primary" value="register" >
+        </form>
+
+        {% endif %}
+
+    </div>
+{% endblock%}

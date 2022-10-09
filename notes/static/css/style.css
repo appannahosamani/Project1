@@ -1,0 +1,14 @@
+* {
+    background-color: rgb(36, 106, 79);
+}
+
+th{
+    background-color: maroon;
+}
+
+        table,th,td{
+            border-collapse: collapse;
+            
+        }
+    
+        

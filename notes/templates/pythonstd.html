@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+            background:rgb(171, 123, 123);
+        }
+        table{
+            border-color: darkslategray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Python Students</h1>
+    <table border="2px">
+        <tr>
+            <th>Name</th>
+            <th>PhoneNo</th>
+            <th>Branch</th>
+            <th>YOP</th>
+            <th>Score</th>
+            <th>Skill</th>
+            <th>MockRating</th>
+        </tr>
+        {% for data in students%} {% if data.skill == 'python' %}
+        <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.PhoneNo}}</td>
+            <td>{{data.branch}}</td>
+            <td>{{data.yop}}</td>
+            <td>{{data.score}}</td>
+            <td>{{data.skill}}</td>
+            <td>{{data.mock}}</td>
+        </tr>{%endif%} {%endfor%}
+
+    </table>
+    <h1>
+        <a href="pythp">Priority1*</a>
+        <!-- <a href="python/pythp1">Priority1</a> -->
+    </h1>
+</body>
+
+</html>

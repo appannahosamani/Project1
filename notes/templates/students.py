@@ -1,0 +1,25 @@
+my_dict={
+    "students":[
+            {'name':'Appu','PhoneNo':8123621274,'branch':'BCA','yop':2019,'score':69,'skill':'python','mock':'1*'},
+            {"name":"praveen","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':70, 'skill':'python','mock':'1*'},
+            {"name":"Raj","PhoneNo":7996024420,'branch': 'EEE','yop':2019,'score':70, 'skill':'java','mock':'1*'},
+            {"name":"Imran","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':58, 'skill':'python','mock':'1'},
+            {"name":"Prajwal","PhoneNo":7996024420,'branch': 'Meck','yop':2020,'score':80, 'skill':'python','mock':'1*'},
+            {"name":"Shreekant","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':65, 'skill':'python','mock':'1'},
+            {"name":"Vinay","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':70, 'skill':'python','mock':'1*'},
+            {"name":"Girish","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':60, 'skill':'java','mock':'1'},
+            {"name":"raju","PhoneNo":7996024420,'branch': 'BCA','yop':2020,'score':65, 'skill':'java','mock':'1'},
+            {"name":"kiran","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':62, 'skill':'java','mock':'1*'},
+            {"name":"sandeep","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':60, 'skill':'java','mock':'1'},
+            {"name":"asha","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':58, 'skill':'java','mock':'1'},
+            {"name":"usha","PhoneNo":7996024420,'branch': 'CIVIL','yop':2020,'score':60, 'skill':'java','mock':'1*'},
+            {"name":"rocky","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':70, 'skill':'java','mock':'1*'},
+            {"name":"sachin","PhoneNo":7996024420,'branch': 'ECE','yop':2020,'score':56, 'skill':'java','mock':'1*'},
+            {"name":"ajay","PhoneNo":7996024420,'branch': 'CIVIL','yop':2020,'score':60, 'skill':'java','mock':'1'},
+            {"name":"pavan","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':63, 'skill':'java','mock':'1'},
+            {"name":"ram","PhoneNo":7996024420,'branch': 'ECE','yop':2020,'score':60, 'skill':'java','mock':'1*'},
+            {"name":"arjun","PhoneNo":7996024420,'branch': 'EEE','yop':2020,'score':60, 'skill':'python','mock':'1'},
+            {"name":"vijay","PhoneNo":7996024420,'branch': 'CS','yop':2020,'score':59, 'skill':'java','mock':'1'},
+            {"name":"mohan","PhoneNo":7996024420,'branch': 'CS','yop':2020,'score':80, 'skill':'python','mock':'1*'},
+            ]
+}
