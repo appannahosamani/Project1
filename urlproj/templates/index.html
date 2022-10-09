@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>iam home page...!!!</h1>
+    
+    <a href="{% url 'urlapp:relative' %}">relative</a>
+    <a href="{% url 'urlapp:other' %}">other</a>
+    <a href="{% url 'admin:index' %}">admin</a><br><br>
+    <i class="fa-solid fa-face-smile-tear"></i>
+    
+{% endblock %}
