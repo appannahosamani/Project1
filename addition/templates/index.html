@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Addition</h1>
+    <form action="add"  method="POST">
+        {% csrf_token %}
+        Enter 1st Number:<input type="text" name="num1" > <br><br>
+        Enter 2nd Number:<input type="text" name="num2" ><br><br>
+        <button><a href="add">Add</a></button>
+        <button><a href="sub">Sub</a></button>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

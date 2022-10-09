@@ -1,0 +1,16 @@
+{% extends 'adminapp/basic_base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Here are List of companies...</h1>
+        <ol>
+            {% for data in Company_list %}
+            <h1><li><a href="{ data.pk }">{{ data.name }}</a></li></h1>
+            {% endfor %}
+        </ol>
+
+    </div>
+
+</div>
+{% endblock%}
