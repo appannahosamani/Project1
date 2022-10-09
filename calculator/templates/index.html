@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Calculator</h1>
+    <form action="add" method="POST">
+        {% csrf_token %}
+       <input type="text" name="num1" placeholder="  Enter 1st value:"><br><br>
+       <input type="text" name="num2" placeholder=" Enter 2nd value"><br>
+       
+       <button value="+" name="cal">+</button> <!-- type="submit" name="add" -->
+       <button value="-" name="cal">-</button><!-- type="submit" name="sub " -->
+       <button value="*" name="cal">*</button><!-- type="submit" name="mul" -->
+       <button value="/" name="cal">/</button><!-- type="submit" name="div" -->
+       <button value="%" name="cal">%</button><!-- type="submit" name="mod" -->
+       <input type="reset" value="Reset">  
+
+       <h1>Result is {{ Result }}</h1>
+    
+
+
+    </form>
+</center>
+</body>
+</html>
